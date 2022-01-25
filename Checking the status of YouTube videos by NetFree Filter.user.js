@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Checking the status of YouTube videos by NetFree Filter
 // @namespace    https://madrichim.ovh
-// @version      1.0
+// @version      1.1
 // @updateURL    https://github.com/ShlomoCode/Checking-the-status-of-YouTube-videos-by-NetFree-Filter/raw/main/
 // @description  כלי לבדיקת כמותית של מצב סרטונים בסינון נטפרי
 // @author       ShlomoCode
