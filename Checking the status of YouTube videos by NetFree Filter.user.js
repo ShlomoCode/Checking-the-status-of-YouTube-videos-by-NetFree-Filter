@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Checking the status of YouTube videos by NetFree Filter
 // @namespace    https://madrichim.ovh
-// @version      2.2
+// @version      2.3
 // @updateURL    https://github.com/ShlomoCode/Checking-the-status-of-YouTube-videos-by-NetFree-Filter/raw/main/
 // @description  כלי לבדיקת כמותית של מצב סרטונים בסינון נטפרי
 // @author       ShlomoCode
@@ -49,10 +49,10 @@ if (document.URL === "https://www.google.com/TestYtByNetFree") {
     arrayYT = arrayYT.split(prompt("בחר תו מפריד בין סרטון לסרטון, לדוגמה פסיק ורווח, פסיק בלבד, וכדומה. ברירת מחדל: פסיק ורווח.", ", "));
 
     document.write('<p id="StatusALL"></p><br>');
-    document.write('<h3>סרטונים פתוחים</h3><ul id="listOpen"></ul><br>');
-    document.write('<h3>סרטונים חסומים</h3><ul id="listBlock"></ul><br>');
-    document.write('<h3>סרטונים שלא נבדקו</h3><ul id="listUnchecked"></ul><br>');
-    document.write('<h3>שגיאות</h3><ul id="listError"></ul>');
+    document.write('<h3>סרטונים פתוחים</h3><ol id="listOpen"></ol><br>');
+    document.write('<h3>סרטונים חסומים</h3><ol id="listBlock"></ol><br>');
+    document.write('<h3>סרטונים שלא נבדקו</h3><ol id="listUnchecked"></ol><br>');
+    document.write('<h3>שגיאות</h3><ol id="listError"></ol>');
     (() => { //תיקון RTL - יישור לימין
         let doc = document.body.style;
         if (doc.direction === "rtl") {
