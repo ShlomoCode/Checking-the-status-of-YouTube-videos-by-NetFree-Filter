@@ -5,5 +5,5 @@
 * לכרום: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=iw
 * לפיירפוקס: https://addons.mozilla.org/he/firefox/addon/tampermonkey
 
-לאחר ההתקנה יש להיכנס לכתובת:https://www.google.com/TestYtByNetFree ולפעול על פי ההנחיות.
+לאחר ההתקנה יש להיכנס לכתובת: https://www.google.com/TestYtByNetFree ולפעול על פי ההנחיות.
 
