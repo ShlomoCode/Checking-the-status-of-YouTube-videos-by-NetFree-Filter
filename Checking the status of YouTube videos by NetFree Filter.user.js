@@ -10,6 +10,7 @@
 //הדפסה בפועל של הרשימות
 //בחירת תו מפריד
 if (document.URL === "https://www.google.com/TestYtByNetFree") {
+  document.title = "בדיקת מצב סרטוני יוטיוב בנטפרי";
   function jsonTest(block) {
     switch (block) {
       case "deny":
