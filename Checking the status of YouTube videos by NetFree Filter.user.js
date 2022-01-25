@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Checking the status of YouTube videos by NetFree Filter
 // @namespace    https://madrichim.ovh
-// @version      2.3
+// @version      2.4
 // @updateURL    https://github.com/ShlomoCode/Checking-the-status-of-YouTube-videos-by-NetFree-Filter/raw/main/
 // @description  כלי לבדיקת כמותית של מצב סרטונים בסינון נטפרי
 // @author       ShlomoCode
@@ -45,7 +45,7 @@ if (document.URL === "https://www.google.com/TestYtByNetFree") {
         }
     }
 
-    let arrayYT = prompt("הכנס כאן רשימת סרטוני יוטיוב מופרדים בפסיק ורווח, ואז לחץ אישור.");
+    let arrayYT = prompt("הכנס כאן רשימת סרטוני יוטיוב מופרדים בתו קבוע (למשל פסיק), ואז לחץ אישור.");
     arrayYT = arrayYT.split(prompt("בחר תו מפריד בין סרטון לסרטון, לדוגמה פסיק ורווח, פסיק בלבד, וכדומה. ברירת מחדל: פסיק ורווח.", ", "));
 
     document.write('<p id="StatusALL"></p><br>');
