@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Checking the status of YouTube videos by NetFree Filter
 // @namespace    https://madrichim.ovh
-// @version      2.0
+// @version      2.2
 // @updateURL    https://github.com/ShlomoCode/Checking-the-status-of-YouTube-videos-by-NetFree-Filter/raw/main/
 // @description  כלי לבדיקת כמותית של מצב סרטונים בסינון נטפרי
 // @author       ShlomoCode
@@ -9,7 +9,8 @@
 // ==/UserScript==
 if (document.URL === "https://www.google.com/TestYtByNetFree") {
     document.title = "בדיקת מצב סרטוני יוטיוב בנטפרי";
-    // let Rest;
+    document.open()
+        // let Rest;
 
     function printErrors(YTurl, error) {
         var list = document.getElementById("listError");
@@ -76,7 +77,7 @@ if (document.URL === "https://www.google.com/TestYtByNetFree") {
             })
             .finally(() => {
                 if (index === arrayYT.length - 1) {
-                    document.getElementById("StatusALL").innerText = "הושלם בהצלחה. " + index + "כתובות עובדו."
+                    document.getElementById("StatusALL").innerText = "הושלם בהצלחה. " + index + " כתובות עובדו "
                     playCompleted();
                 }
                 // else {
