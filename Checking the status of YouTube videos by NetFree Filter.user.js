@@ -38,6 +38,7 @@ if (document.URL === "https://www.google.com/TestYtByNetFree") {
                 //לא נבדק
                 printStatus(YTurl, "listUnchecked");
                 break;
+            case "":
             case undefined:
                 //פתוח
                 printStatus(YTurl, "listOpen");
