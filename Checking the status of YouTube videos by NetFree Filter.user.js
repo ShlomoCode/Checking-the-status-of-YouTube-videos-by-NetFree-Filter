@@ -38,6 +38,7 @@ if (document.URL === "https://www.google.com/TestYtByNetFree") {
                 //לא נבדק
                 printStatus(YTurl, "listUnchecked");
                 break;
+            case "":
             case undefined:
                 //פתוח
                 printStatus(YTurl, "listOpen");
@@ -65,7 +66,7 @@ if (document.URL === "https://www.google.com/TestYtByNetFree") {
     })();
 
     arrayYT.forEach((YTurl, index) => {
-        fetch(`https://www.google.com/~netfree/test-url?u=${YTurl}`, {})
+        fetch(`https://www.google.com/~netfree/test-url?u=${YTurl}&h=000000000000000000`, {})
             .then((response) => {
                 return response.json();
             })
